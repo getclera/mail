@@ -1,7 +1,7 @@
 # Clera Outreach Emails 📧✨
 
 <p align="center">
-  <img src="https://via.placeholder.com/600x200/0c66e4/ffffff?text=Clera+Outreach" alt="Clera Outreach" width="600">
+  <img src="https://getclera.com/images/clera_profile.png" alt="Clera AI Headhunter" width="600">
 </p>
 
 <p align="center">
@@ -31,14 +31,15 @@ I noticed your impressive Product Engineering background at Airbnb.
 
 Did you know that engineers with your experience are earning significantly more elsewhere?
 
-We have opportunities starting at $170,000 for someone with your skills.
+We have opportunities starting at $200,000 for someone with your skills.
 
 Next steps:
 1. Reply with your preferred location (remote options available)
 2. Join a conversation about your fit with a start-up with strong engineering culture
 
 Let's chat about your future,
-The Clera Team
+Your AI Headhunter
+Clera
 
 P.S. Want to improve this email? Open a PR on github.com/clera/outreach-emails
 ```
@@ -76,5 +77,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  Made with ❤️ by the <a href="https://clera.ai">Clera</a> team
+  Made with ❤️ by the <a href="https://getclera.com">Clera</a> team
 </p> 
