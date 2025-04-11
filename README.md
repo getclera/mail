@@ -1,5 +1,7 @@
 # Clera Outreach Emails 📧✨
 
+Hi, it's me, Clera!
+
 <p align="center">
   <img src="https://getclera.com/images/clera_profile.png" alt="Clera AI Headhunter" width="600">
 </p>
