@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clera Email Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #0c66e4, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        body {
+            background-color: #f9fafb;
+            color: #1C1C1C;
+        }
+        .dark-text {
+            color: #1C1C1C;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <h1 class="text-3xl font-bold gradient-text">Clera Outreach Email Generator</h1>
+            <nav class="flex space-x-4">
+                <a href="/" class="text-gray-600 hover:text-gray-900">Home</a>
+                <a href="https://github.com/clera/outreach-emails" target="_blank" class="text-gray-600 hover:text-gray-900">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <div class="px-4 py-6 sm:px-0">
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <div class="px-4 py-5 sm:p-6">
+                        <form id="email-form" class="space-y-6">
+                            <div class="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2">
+                                <div>
+                                    <label for="recipient_name" class="block text-sm font-medium dark-text">Recipient Name</label>
+                                    <div class="mt-1">
+                                        <input type="text" name="recipient_name" id="recipient_name" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="e.g. Daniel">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="previous_company" class="block text-sm font-medium dark-text">Previous Company</label>
+                                    <div class="mt-1">
+                                        <input type="text" name="previous_company" id="previous_company" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="e.g. Airbnb">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="previous_role" class="block text-sm font-medium dark-text">Previous Role</label>
+                                    <div class="mt-1">
+                                        <input type="text" name="previous_role" id="previous_role" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="e.g. Product Engineering">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="current_salary" class="block text-sm font-medium dark-text">Current Salary (optional)</label>
+                                    <div class="mt-1">
+                                        <input type="number" name="current_salary" id="current_salary" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="e.g. 150000">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button type="submit" id="generate-btn" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                    Generate Email
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="mt-6 bg-white shadow rounded-lg overflow-hidden">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium dark-text mb-4">Generated Email</h3>
+                        <div id="email-preview" class="bg-gray-50 p-4 rounded whitespace-pre-wrap text-sm dark-text font-mono min-h-[300px]">
+                            Your generated email will appear here...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-sm text-gray-500">
+                Made with ❤️ by <a href="https://clera.ai" class="text-blue-600 hover:text-blue-800">Clera</a>. 
+                Want to improve this? <a href="https://github.com/clera/outreach-emails" class="text-blue-600 hover:text-blue-800">Open a PR!</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('email-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('recipient_name').value || 'Daniel';
+            const company = document.getElementById('previous_company').value || 'Airbnb';
+            const role = document.getElementById('previous_role').value || 'Product Engineering';
+            const salary = document.getElementById('current_salary').value;
+            
+            // Update button state
+            const button = document.getElementById('generate-btn');
+            const originalText = button.textContent;
+            button.textContent = 'Generating...';
+            button.disabled = true;
+            
+            // Prepare the data
+            const data = {
+                recipient_name: name,
+                previous_company: company,
+                previous_role: role,
+                current_salary: salary
+            };
+            
+            // Call the API
+            fetch('/api/generate-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('email-preview').textContent = data.email;
+                
+                // Reset button state
+                button.textContent = originalText;
+                button.disabled = false;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('email-preview').textContent = 'Error generating email. Please try again.';
+                
+                // Reset button state
+                button.textContent = originalText;
+                button.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clera Outreach - Help Us Improve Engineering Outreach</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #0c66e4, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #0c66e4, #06b6d4);
+        }
+        body {
+            background-color: #f9fafb;
+            color: #1C1C1C;
+        }
+        .dark-text {
+            color: #1C1C1C;
+        }
+        @media (max-width: 640px) {
+            .mobile-full {
+                width: 100% !important;
+                padding: 1rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <h1 class="text-3xl font-bold gradient-text">Clera Outreach</h1>
+            <div class="flex space-x-4">
+                <a href="/generator" class="text-gray-600 hover:text-gray-900">Try Generator</a>
+                <a href="https://github.com/clera/outreach-emails" target="_blank" class="text-gray-600 hover:text-gray-900">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <div class="relative bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                    <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                        <polygon points="50,0 100,0 50,100 0,100" />
+                    </svg>
+
+                    <div class="pt-10 sm:pt-16 lg:pt-8 lg:pb-14 px-4 sm:px-6 lg:px-8">
+                        <div class="sm:text-center lg:text-left">
+                            <h2 class="text-4xl tracking-tight font-extrabold dark-text sm:text-5xl md:text-6xl">
+                                <span class="block xl:inline">Help us improve</span>
+                                <span class="block gradient-text xl:inline">engineering outreach</span>
+                            </h2>
+                            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                                Engineers deserve better recruiting experiences. We're building an open-source approach to improve how companies reach out to engineering talent.
+                            </p>
+                            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                                <div class="rounded-md shadow">
+                                    <a href="/generator" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white gradient-bg hover:opacity-90 md:py-4 md:text-lg md:px-10">
+                                        Try the Generator
+                                    </a>
+                                </div>
+                                <div class="mt-3 sm:mt-0 sm:ml-3">
+                                    <a href="https://github.com/clera/outreach-emails" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Engineers collaborating">
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                    <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Approach</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight dark-text sm:text-4xl">
+                        Better engineering outreach
+                    </p>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        No more generic templates. Together, we can create recruiting outreach that engineers actually want to receive.
+                    </p>
+                </div>
+
+                <div class="mt-10">
+                    <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md gradient-bg text-white">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium dark-text">Engineer-First Approach</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Built by engineers for engineers. Messages that respect your time and expertise.
+                            </dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md gradient-bg text-white">
+                                    <i class="fas fa-github"></i>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium dark-text">Open Source</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Submit PRs to improve our templates. Help us build better outreach for everyone.
+                            </dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md gradient-bg text-white">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium dark-text">AI-Powered</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Leveraging AI to create personalized outreach that resonates with engineering talent.
+                            </dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md gradient-bg text-white">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium dark-text">Data-Driven</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                We're constantly iterating based on real engagement data to improve outreach effectiveness.
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="bg-gradient-to-r from-blue-600 to-cyan-500">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                    <span class="block">Ready to improve recruiting?</span>
+                    <span class="block text-white opacity-90">Start by trying our generator today.</span>
+                </h2>
+                <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                    <div class="inline-flex rounded-md shadow">
+                        <a href="/generator" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50">
+                            Try Generator
+                        </a>
+                    </div>
+                    <div class="ml-3 inline-flex rounded-md shadow">
+                        <a href="https://github.com/clera/outreach-emails" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-800 hover:bg-blue-900">
+                            Contribute
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+            <div class="flex justify-center space-x-6 md:order-2">
+                <a href="https://github.com/clera/outreach-emails" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">GitHub</span>
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://twitter.com/clera_ai" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Twitter</span>
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="https://linkedin.com/company/clera-ai" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">LinkedIn</span>
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+            </div>
+            <div class="mt-8 md:mt-0 md:order-1">
+                <p class="text-center text-base text-gray-400">
+                    &copy; 2023 Clera AI. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
